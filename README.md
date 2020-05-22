@@ -32,3 +32,24 @@ $ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 $ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
 $ kubectl taint nodes --all node-role.kubernetes.io/master-
+
+# Create Namespace 'Develop'
+$ kubectl apply -f ./devops/01-Namespace/ns.yaml
+
+# Get Namespace
+$ kubectl get ns
+
+# Create Deployment
+$ kubectl apply -f ./devops/02-Deployment/deployment.yaml -n develop
+
+# Get Deployment
+$ kubectl get deploy -n develop
+
+# Create Services
+$ kubectl apply -f ./devops/02-Services/services.yaml -n develop
+
+# Get all
+$ kubectl get all --all-namespaces
+
+# Goto
+http://localhost:30080/swagger
