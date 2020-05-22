@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\01-backend.Domain\01-backend.Domain.csproj" />
+    <ProjectReference Include="..\03-Infrastructure\Data\backend.Infraestructure.Data.EF\backend.Infraestructure.Data.EF.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>_02_backend.Application</RootNamespace>
+  </PropertyGroup>
+
+</Project>

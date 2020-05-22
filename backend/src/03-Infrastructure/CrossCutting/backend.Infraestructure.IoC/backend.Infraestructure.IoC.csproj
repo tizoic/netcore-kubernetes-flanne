@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\01-backend.Domain\01-backend.Domain.csproj" />
+    <ProjectReference Include="..\..\Data\backend.Infraestructure.Data.EF\backend.Infraestructure.Data.EF.csproj" />
+    <ProjectReference Include="..\..\..\02-backend.Application\02-backend.Application.csproj" />
+  </ItemGroup>
+</Project>

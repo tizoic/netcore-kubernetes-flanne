@@ -1,0 +1,6 @@
+version: "2.0"
+services:
+  backend:
+    image: scm-user
+    ports: 
+      - "3000:80"

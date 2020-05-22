@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.4"/>
+    <PackageReference Include="AutoMapper" Version="9.0.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="3.1.4"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\03-Infrastructure\Data\backend.Infraestructure.Data.EF\backend.Infraestructure.Data.EF.csproj"/>
+    <ProjectReference Include="..\02-backend.Application\02-backend.Application.csproj"/>
+    <ProjectReference Include="..\01-backend.Domain\01-backend.Domain.csproj"/>
+    <ProjectReference Include="..\03-Infrastructure\CrossCutting\backend.Infraestructure.IoC\backend.Infraestructure.IoC.csproj"/>
+  </ItemGroup>
+</Project>
