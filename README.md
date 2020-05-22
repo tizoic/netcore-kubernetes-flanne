@@ -48,6 +48,9 @@ $ kubectl get deploy -n develop
 # Create Services
 $ kubectl apply -f ./devops/02-Services/services.yaml -n develop
 
+# Get Services
+$ kubectl get svc -n develop
+
 # Get all
 $ kubectl get all --all-namespaces
 
