@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1 as builder
 WORKDIR /app
 COPY . ./
 RUN dotnet restore ./00-backend.Api/*.csproj
-RUN dotnet build 00-backend.Api/*.csproj -c Release -o ./source
+RUN dotnet publish 00-backend.Api/*.csproj -c Release -o ./source
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
