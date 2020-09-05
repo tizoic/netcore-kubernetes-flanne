@@ -4,6 +4,7 @@
 # Disable swap memory
 
 $ sudo swapoff -a
+
 $ sudo nano /etc/fstab (Comment swap line / reboot)
 
 # Create image backend:1.0.0 docker
